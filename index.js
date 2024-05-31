@@ -47,8 +47,7 @@ app.use(async (req, res, next) => {
 
       let modifiedHtml = data.replace(
         /__PLACEHOLDER_FOR_DYNAMIC_META_TAG__/,
-        `<meta name="description" content="New Description">
-        <meta name="title" content="The wedding of Anthony & Leonie - Inviteyou" />
+        `<meta name="title" content="The wedding of Anthony & Leonie - Inviteyou" />
         <meta name="description" content="Digital invitation for the wedding of Anthony & Leonie Madeleine for ${guestData.name}" />
         <meta property="og:image" content=${photoData.main_photo} data-rh="true">
         `
